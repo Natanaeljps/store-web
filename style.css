@@ -377,9 +377,97 @@ nav.show div.icon-cancel-circle {
 
 
 
+/*====  TESTIMONIALS ============================ */
 
+#testimonials .container {
+  margin-left: 0;
+  margin-right: 0;
+}
 
+#testimonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0;
+}
 
+#testimonials blockquote {
+  padding: 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--logo1-color);
+}
+
+#testimonials blockquote p span {
+  font: 700 2.5rem serif;
+  position: absolute;
+  top: -0.375rem;
+  left: -1.875rem;
+  color: var(--logo1-color);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+#testimonials cite img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
+
+/* swiper */
+.swiper-slide {
+  height: auto;
+  padding: 4rem 1rem;
+}
+
+.swiper-pagination-bullet {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--logo1-color);
+}
+
+/*=======*/
+
+.back-to-top {
+  background: var(--logo2-color);
+  color: var(--text-color-light);
+
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+
+  padding: 0.5rem;
+  clip-path: circle();
+
+  font-size: 1.5rem;
+  line-height: 0;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: 0.3s;
+  transform: translateY(100%);
+}
+
+.back-to-top.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 
@@ -438,15 +526,14 @@ nav.show div.icon-cancel-circle {
   }
 
 
-  /* home */
+  /* about */
 
   #about {
-    padding-bottom: 5rem;
-
-    margin-top: -2rem;
+    
   }
 
   #about .container {
+
     grid-auto-flow: column;
     justify-content: space-between;
     margin: 0 1.2rem;
@@ -469,13 +556,10 @@ nav.show div.icon-cancel-circle {
     font-size: 2rem;
   }
 
-
-
-
   #about .image::before {
     content: '';
-    height: 35%;
-    width: 50%;
+    height: 31%;
+    width: 45%;
     left: 0rem;
     background: var(--logo2-color);
     position: absolute;

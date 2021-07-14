@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--Icons-->
     <link rel="stylesheet" href="/img/icomoon/style.css" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -76,10 +81,7 @@
             </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi sit voluptatem aspernatur mollitia illum in nostrum vel, distinctio sint dolore consequuntur non, ullam veritatis. Praesentium vero corporis quos quas.
-              <br>
-              <br>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore molestias porro aliquid mollitia nobis vel enim error. Expedita iste error iure illum ex nesciunt commodi illo nisi at deleniti. Error!
-            </p>
+              <br>              
             <br>
             <a href="#" class="button">Saiba Mais</a>
           </div>
@@ -126,8 +128,57 @@
       <div class="divider-1"></div>
       
       <!--======TESTIMONIALS==================-->
-      <section id="testimonials">
-        <h2>Depoimentos</h2>
+      <section class="section" id="testimonials">
+        <div class="container">
+          <header>
+            <h2 class="title">Depoimentos de ex-alunos</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi, officiis!</p>
+          </header>
+          <div class="tetimonials swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonials swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio impedit doloremque beatae in, sunt neque eos, autem aspernatur cum laudantium dolorem quisquam iste saepe. Est delectus voluptate error enim tempora!
+                  </p>
+                  <cite>
+                    <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="foto de ex aluno"/>
+                    João Victor
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonilas swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, laboriosam sunt cumque molestiae impedit tenetur incidunt repellat facere iusto beatae laborum aperiam perspiciatis velit asperiores magni, et quos quibusdam voluptas.
+                  </p>
+                  <cite>
+                    <img src="https://randomuser.me/api/portraits/men/71.jpg" alt="foto ex aluno"/>
+                    Francisco Silva
+                  </cite>
+                </blockquote>
+              </div>
+              <div class="testimonials swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis mollitia, a consequatur odio dolores nam repellendus, illum magni at unde alias? Rerum repudiandae veritatis dignissimos magnam nisi placeat veniam ipsum?
+                  </p>
+                  <cite>
+                    <img src="https://randomuser.me/api/portraits/men/61.jpg" alt="foto ex aluno"/>
+                    Wesley Moura
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        
       </section>
 
       <div class="divider-2"></div>
@@ -143,6 +194,8 @@
         <h2>Sociais</h2>
       </section>
     </footer>
+    
+    <a href="#home" class="back-to-top"><i class="icon-circle-up"></i></a>
     <!--Main-->
     <script src="main.js"></script>
   </body>
