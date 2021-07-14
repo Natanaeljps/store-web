@@ -123,9 +123,7 @@ body {
   font-size: var(--title-font);
 }
 
-.section header {
-  margin-bottom: 4rem;
-}
+
 
 .section header strong {
   color: var(--logo2-color);
@@ -321,15 +319,28 @@ nav.show div.icon-cancel-circle {
 
 /*====  ABOUT ================= */
 
+#about{
+  text-align: center;
+}
+
+#about .image {
+  position: relative;
+  right: -5%;
+}
+
+#about .container {
+  margin: 0;
+}
 
 
 #about .image::before {
   content: '';
-  height: 40%;
-  width: 80%;
-  right: 5rem;
+  height: 100%;
+  width: 100%;
   background: var(--logo2-color);
   position: absolute;
+  top: -8.3%;
+  left: -23%;
   z-index: 0;
 }
 
@@ -347,8 +358,9 @@ nav.show div.icon-cancel-circle {
 /*====  SERVICES ============== */
 
 #services{
-  margin-top: -5rem;
+  margin-bottom: -5rem;
   overflow: hidden;
+  text-align: center;
 }
 
 .cards.grid {
@@ -378,20 +390,23 @@ nav.show div.icon-cancel-circle {
 
 
 /*====  TESTIMONIALS ============================ */
+#testimonials{
+  text-align: center;
+}
 
 #testimonials .container {
-  margin-left: 0;
+  margin-left: -0;
   margin-right: 0;
 }
 
 #testimonials header {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  margin-bottom: 0;
+  margin-bottom: -1rem;
 }
 
 #testimonials blockquote {
-  padding: 2rem;
+  padding: 0rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
   border-radius: 0.25rem;
 }
@@ -444,7 +459,7 @@ nav.show div.icon-cancel-circle {
 
 .back-to-top {
   background: var(--logo2-color);
-  color: var(--text-color-light);
+  color: var(--logo1-color);
 
   position: fixed;
   right: 1rem;
@@ -467,6 +482,16 @@ nav.show div.icon-cancel-circle {
   visibility: visible;
   opacity: 1;
   transform: translateY(0);
+}
+
+/*========= SOCIALS =========*/
+#socials{
+  text-align: center;
+}
+
+#socials a{
+  color: var(--logo2-color);
+  margin: 0.5rem;
 }
 
 
@@ -517,7 +542,6 @@ nav.show div.icon-cancel-circle {
   #home .text {
     order: 0;
     max-width: 24rem;
-    text-align: left;
     font-size: 1.2rem;
   }
 
@@ -546,7 +570,6 @@ nav.show div.icon-cancel-circle {
   #about .text {
     order: 1;
     max-width: 24rem;
-    text-align: right;
     font-size: 1.2rem;
 
     margin-top: -3.5rem;
@@ -593,7 +616,6 @@ nav.show div.icon-cancel-circle {
   #services .text {
     order: 1;
     max-width: 24rem;
-    text-align: right;
     font-size: 1.5rem;
 
     margin-top: -3.5rem;

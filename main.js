@@ -31,7 +31,7 @@ function changeHeaderWhenScroll() {
   }
 }
 
-/* Testimonials carousel slider swiper */
+// Testimonials carousel slider swiper 
 const swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   pagination: {
