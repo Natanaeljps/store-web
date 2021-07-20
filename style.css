@@ -84,20 +84,12 @@ body {
 
 .divider-1 {
   height: 1px;
-  background: linear-gradient(
-    270deg,
-    rgb(240, 16, 0),
-    hsl(0, 0%, 99%)
-  );
+  background: linear-gradient(270deg, rgb(240, 16, 0), hsl(0, 0%, 99%));
 }
 
 .divider-2 {
   height: 1px;
-  background: linear-gradient(
-    270deg,
-    hsl(0, 0%, 99%),
-    rgb(240, 16, 0)
-  );
+  background: linear-gradient(270deg, hsl(0, 0%, 99%), rgb(240, 16, 0));
 }
 
 /*====  LAYOUT ============================ */
@@ -122,8 +114,6 @@ body {
 .section .subtitle {
   font-size: var(--title-font);
 }
-
-
 
 .section header strong {
   color: var(--logo2-color);
@@ -190,8 +180,8 @@ nav ul li a.active {
 nav ul li a::after {
   content: '';
   width: 0%;
-  height: 2px;
-  background: var(--logo1-color);
+  height: 3px;
+  background: var(--logo2-color);
 
   position: absolute;
   left: 0;
@@ -269,7 +259,6 @@ nav.show div.icon-cancel-circle {
 /*====  HOME =============== */
 
 #home {
-
   margin-bottom: 0rem;
   overflow: hidden;
 }
@@ -319,7 +308,7 @@ nav.show div.icon-cancel-circle {
 
 /*====  ABOUT ================= */
 
-#about{
+#about {
   text-align: center;
 }
 
@@ -331,7 +320,6 @@ nav.show div.icon-cancel-circle {
 #about .container {
   margin: 0;
 }
-
 
 #about .image::before {
   content: '';
@@ -357,7 +345,7 @@ nav.show div.icon-cancel-circle {
 
 /*====  SERVICES ============== */
 
-#services{
+#services {
   margin-bottom: -5rem;
   overflow: hidden;
   text-align: center;
@@ -387,10 +375,8 @@ nav.show div.icon-cancel-circle {
   margin-bottom: 0.75rem;
 }
 
-
-
 /*====  TESTIMONIALS ============================ */
-#testimonials{
+#testimonials {
   text-align: center;
 }
 
@@ -485,17 +471,14 @@ nav.show div.icon-cancel-circle {
 }
 
 /*========= SOCIALS =========*/
-#socials{
+#socials {
   text-align: center;
 }
 
-#socials a{
+#socials a {
   color: var(--logo2-color);
   margin: 0.5rem;
 }
-
-
-
 
 /*========= MEDIA QUERIES =========*/
 /* extra large devices: 900px > */
@@ -549,15 +532,12 @@ nav.show div.icon-cancel-circle {
     font-size: 2rem;
   }
 
-
   /* about */
 
   #about {
-    
   }
 
   #about .container {
-
     grid-auto-flow: column;
     justify-content: space-between;
     margin: 0 1.2rem;
@@ -588,18 +568,17 @@ nav.show div.icon-cancel-circle {
     position: absolute;
     z-index: 0;
   }
-  
+
   #about .image img {
     position: relative;
     right: -1rem;
     top: -3rem;
   }
-  
+
   #about .image img,
   #about .image::before {
     border-radius: 0.25rem;
   }
-
 
   /* services */
   .cards {
@@ -610,8 +589,6 @@ nav.show div.icon-cancel-circle {
     padding-left: 3rem;
     padding-right: 3rem;
   }
-
-
 
   #services .text {
     order: 1;
@@ -624,5 +601,207 @@ nav.show div.icon-cancel-circle {
   #services .title {
     font-size: 2rem;
   }
+}
+
+/*========= MEDIA QUERIES =========*/
+/* extra large devices: 1200px > */
+@media (min-width: 1200px) {
+  /* home */
+
+  #home {
+    padding-bottom: 5rem;
+    top: 1rem;
+  }
+
+  #home .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  #home .image {
+    order: 1;
+    top: 4rem;
+  }
+
+  #home .text {
+    order: 0;
+    max-width: 50rem;
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  #home .title {
+    text-align: left;
+    font-size: 3rem;
+  }
+
+  /* about */
+
+  #about {
+    top: -2rem;
+  }
+
+  #about .container {
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin: 0 1.2rem;
+  }
+
+  #about .image {
+    order: 0;
+  }
+
+  #about .text {
+    order: 1;
+    max-width: 50rem;
+    font-size: 2rem;
+    text-align: right;
+    margin-top: -3.5rem;
+  }
+
+  #about .title {
+    font-size: 3rem;
+  }
+
+  #about .image::before {
+    content: '';
+    height: 75%;
+    width: 100%;
+    top: 5%;
+    left: -5rem;
+    background: var(--logo2-color);
+    position: absolute;
+    z-index: 0;
+  }
+
+  #about .image img {
+    position: relative;
+    right: 0.5rem;
+    top: -3rem;
+  }
+
+  #about .image img,
+  #about .image::before {
+    border-radius: 0.25rem;
+  }
+
+
+  /*====  SERVICES ============== */
+
+#services {
+  padding-top: 4rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+#services .title{
+  font-size: 3rem;
+}
+
+#services .subtilte{
+  font-size: 2rem;
+}
+
+.cards.grid {
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 2rem 2rem;
+  box-shadow: 0px 0px 5px rgb(240, 240, 240);
+  border-bottom: 0.25rem solid var(--logo2-color);
+  border-radius: 0.25rem 0.25rem 0 0;
+  text-align: center;
+}
+
+.card i {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--logo2-color);
+}
+
+#services .card .title {
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
+}
+
+
+
+/*====  TESTIMONIALS ============================ */
+#testimonials .title{
+  font-size: 3rem;
+}
+
+#testimonials .text{
+  font-size: 2rem;
+}
+
+#testimonials {
+  padding-top: 4rem;
+  text-align: center;
+}
+
+#testimonials .container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#testimonials header {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: -1rem;
+}
+
+#testimonials blockquote {
+  padding: 0rem 10rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 0.25rem;
+}
+
+#testimonials blockquote p {
+  position: relative;
+  text-indent: 1.875rem;
+  margin-bottom: 1.5rem;
+  color: var(--logo1-color);
+}
+
+#testimonials blockquote p span {
+  font: 700 3rem serif;
+  position: absolute;
+  top: -0.375rem;
+  left: -1.875rem;
+  color: var(--logo1-color);
+}
+
+#testimonials cite {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+}
+
+#testimonials cite img {
+  width: 5rem;
+  height: 5rem;
+  object-fit: cover;
+  clip-path: circle();
+  margin-right: 0.5rem;
+}
+
+
+/*========= SOCIALS =========*/
+#socials {
+  text-align: center;
+}
+
+#socials a {
+  font-size: 2rem;
+  color: var(--logo2-color);
+  margin: 0.7rem;
+}
+
+
+
 
 }
